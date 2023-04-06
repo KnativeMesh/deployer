@@ -50,36 +50,36 @@ type VersionKnative17 struct {
 }
 
 func (v VersionKnative17) GetServingCRDs() string {
-	return "https://github.com/knative/serving/releases/download/knative-v1.8.6/serving-crds.yaml"
+	return "https://github.com/knative/serving/releases/download/knative-v1.7.4/serving-crds.yaml"
 }
 
 func (v VersionKnative17) GetServingCore() string {
-	return "https://github.com/knative/serving/releases/download/knative-v1.8.6/serving-core.yaml"
+	return "https://github.com/knative/serving/releases/download/knative-v1.7.4/serving-core.yaml"
 }
 
 func (v VersionKnative17) GetEventingCRDs() string {
-	return "https://github.com/knative/eventing/releases/download/knative-v1.8.8/eventing-crds.yaml"
+	return "https://github.com/knative/eventing/releases/download/knative-v1.7.8/eventing-crds.yaml"
 }
 
 func (v VersionKnative17) GetEventingCore() string {
-	return "https://github.com/knative/eventing/releases/download/knative-v1.8.8/eventing-core.yaml"
+	return "https://github.com/knative/eventing/releases/download/knative-v1.7.8/eventing-core.yaml"
 }
 
 type VersionKnative19 struct {
 }
 
 func (v VersionKnative19) GetServingCRDs() string {
-	return "https://github.com/knative/serving/releases/download/knative-v1.8.6/serving-crds.yaml"
+	return "https://github.com/knative/serving/releases/download/knative-v1.9.3/serving-crds.yaml"
 }
 
 func (v VersionKnative19) GetServingCore() string {
-	return "https://github.com/knative/serving/releases/download/knative-v1.8.6/serving-core.yaml"
+	return "https://github.com/knative/serving/releases/download/knative-v1.9.3/serving-core.yaml"
 }
 
 func (v VersionKnative19) GetEventingCRDs() string {
-	return "https://github.com/knative/eventing/releases/download/knative-v1.8.8/eventing-crds.yaml"
+	return "https://github.com/knative/eventing/releases/download/knative-v1.9.7/eventing-crds.yaml"
 }
 
 func (v VersionKnative19) GetEventingCore() string {
-	return "https://github.com/knative/eventing/releases/download/knative-v1.8.8/eventing-core.yaml"
+	return "https://github.com/knative/eventing/releases/download/knative-v1.9.7/eventing-core.yaml"
 }
