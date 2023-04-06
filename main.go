@@ -18,17 +18,14 @@ func main() {
 	fmt.Printf("This is an application for convenient migration from microservices to serverless\n\n\n")
 	source := utils.NewStdinReader()
 
-	config, err := buildKubernetesConfig(source)
-	if err != nil {
-		fmt.Printf("Can't build appropriate kubernetes config. Please check yout kubeconfig file or provide another one \n")
-		fmt.Printf("Err %+v \n", err.Error())
-		return
-	}
 	cmd := exec.Command("kubectl", "config", "use-context", "rancher-desktop")
 	if err := cmd.Run(); err != nil {
 		log.Fatal(err)
 	}
-	knative.InstallKnative(config, source)
+	err := knative.InstallKnative(source)
+	if err != nil {
+		return
+	}
 }
 
 func buildKubernetesConfig(source utils.Reader) (*rest.Config, error) {
